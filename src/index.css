@@ -1,0 +1,55 @@
+@font-face {
+    font-family: open-sans;
+    src: url('./assets/open-sans.ttf');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+ 
+}
+
+.bolder{
+    font-family: open-sans;
+        font-weight: 900;
+        font-size: 0.875rem;
+        /* 14px */
+        line-height: 1.25rem;
+        /* 20px */
+        color: rgb(113 113 122);
+}
+
+.para{
+    font-family: open-sans;
+    line-height: 1.17rem;
+    text-align: justify;
+    --tw-text-opacity: 1;
+        color: rgb(113 113 122 / var(--tw-text-opacity));
+        font-weight: 100;
+    font-size: 0.875rem
+            /* 14px */
+        ;
+        line-height: 1.25rem
+            /* 20px */
+        ;
+        padding-bottom: 1px;
+}
+
+.parap{
+    font-family: open-sans;
+    line-height: 1.17rem;
+    text-align: justify;
+        font-weight: 100;
+    font-size: 0.875rem
+            /* 14px */
+        ;
+        line-height: 1.25rem
+            /* 20px */
+        ;
+        margin: 0 2px;
+        padding-bottom: 1px;
+}
