@@ -7,7 +7,7 @@ const HomeServicesComponent = ({ data, width }) => {
       {data.map((data, index) => (
         <div
           key={index}
-          className={`flex gap-8 w-full sm:w-[100%] mt-10 mr-8 mb-3`}
+          className={`flex gap-8 w-full sm:w-[${width}] mt-10 mr-8 mb-3`}
         >
           <img className="h-16 w-16" src={data.img} alt="UPS" />
           <div>

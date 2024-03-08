@@ -40,12 +40,6 @@ const Slider = ({ hight, images, smallScreen }) => {
       </div>
     </div>
   );
-
-  // return (
-  //   <>
-  //     <div className="w-full h-[50vw] bg-blue-500"></div>
-  //   </>
-  // );
 };
 
 export default Slider;

@@ -8,11 +8,13 @@ const Header = () => {
   return (
     <header className="w-full font-['open_sans'] z-20  bg-zinc-100 fixed">
       <div className="max-w-screen-xl m-auto py-2 px-5 md:px-0 md:flex justify-between">
-        <img
-          className="w-20 h-20"
-          src="https://www.sync-power.com/jpg/logo-construction2.png"
-          alt=""
-        />
+        <NavLink to="/">
+          <img
+            className="w-20 h-20"
+            src="https://www.sync-power.com/jpg/logo-construction2.png"
+            alt=""
+          />
+        </NavLink>
         <div
           onClick={() => setOpen(!open)}
           className="md:hidden absolute top-8 right-8 cursor-pointer"

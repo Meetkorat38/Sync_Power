@@ -21,6 +21,7 @@
         line-height: 1.25rem;
         /* 20px */
         color: rgb(113 113 122);
+        font-family: open-sans;
 }
 
 .para{
@@ -37,6 +38,7 @@
             /* 20px */
         ;
         padding-bottom: 1px;
+        font-family: open-sans;
 }
 
 .parap{
@@ -52,4 +54,5 @@
         ;
         margin: 0 2px;
         padding-bottom: 1px;
+                font-family: open-sans;
 }
