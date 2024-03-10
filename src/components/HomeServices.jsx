@@ -36,7 +36,7 @@ const HomeServices = () => {
           Services
         </h1>
         <div className=" sm:block lg:flex lg:gap-[5%] lg:flex-wrap lg:w-full  ">
-          <HomeServicesComponent data={HomeServicesData} width={"45%"} />
+          <HomeServicesComponent data={HomeServicesData} width={"sm:w-[45%]"} />
         </div>
       </div>
     </div>

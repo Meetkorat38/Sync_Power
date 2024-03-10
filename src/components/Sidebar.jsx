@@ -2,7 +2,7 @@
 import { IoMdArrowDropright } from "react-icons/io";
 import { NavLink } from "react-router-dom";
 
-const Sidebar = ({ data }) => {
+const Sidebar = ({ data, link = "#" }) => {
   return (
     <div className="w-full flex flex-col ">
       {data.map((text, index) => (
@@ -13,7 +13,7 @@ const Sidebar = ({ data }) => {
         >
           <IoMdArrowDropright />
           <NavLink
-            to="#"
+            to={link}
             className={({ isActive }) => {
               return `font-['open_sans'] text-sm ${
                 isActive ? "font-thin " : " font-semibold"

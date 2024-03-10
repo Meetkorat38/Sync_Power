@@ -10,6 +10,11 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import Error from "./components/Error";
+import Ats from "./components/Ats";
+import Ups from "./components/Ups";
+import SwitchGear from "./components/SwitchGear";
+import CircuitBreaker from "./components/CircuitBreaker";
+import ServicesMain from "./components/ServicesMain";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +37,29 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: <Services />,
+        children: [
+          {
+            path: "/services",
+            element: <ServicesMain />,
+          },
+
+          {
+            path: "/services/ups",
+            element: <Ups />,
+          },
+          {
+            path: "/services/ats",
+            element: <Ats />,
+          },
+          {
+            path: "/services/circuit-breaker",
+            element: <CircuitBreaker />,
+          },
+          {
+            path: "/services/switchgear",
+            element: <SwitchGear />,
+          },
+        ],
       },
       {
         path: "/contact",
@@ -46,8 +74,5 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  // <React.StrictMode>
-
   <RouterProvider router={router} />
-  // </React.StrictMode>,
 );

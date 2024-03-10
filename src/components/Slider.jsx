@@ -18,7 +18,7 @@ const Slider = ({ hight, images, smallScreen }) => {
 
   return (
     <div
-      className={`w-full h-[${smallScreen}] md:h-[${hight}] bg-center bg-cover relative  group`}
+      className={`w-full ${smallScreen} ${hight} bg-center bg-cover relative  group`}
     >
       <div
         style={{ backgroundImage: `url(${images[currentIndex].url})` }}

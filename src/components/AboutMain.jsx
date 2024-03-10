@@ -16,7 +16,7 @@ const data = [
 const AboutMain = () => {
   return (
     <div className="w-full">
-      <Slider smallScreen="20vh" hight={"50vh"} images={data} />
+      <Slider smallScreen={"h-[20vh]"} hight={"md:h-[50vh]"} images={data} />
       <AboutWho />
       <Partners />
       <Capability />

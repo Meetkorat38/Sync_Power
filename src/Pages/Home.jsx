@@ -19,7 +19,11 @@ const Home = () => {
 
   return (
     <div className="font-['open_sans']">
-      <Slider images={imagesURL} hight={"84vh"} smallScreen={"40vh"} />
+      <Slider
+        images={imagesURL}
+        hight={"md:h-[84vh]"}
+        smallScreen={"h-[40vh]"}
+      />
       <Who />
       <HomeServices />
       <Partners home={true} />
