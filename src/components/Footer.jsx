@@ -7,7 +7,7 @@ import { MdOutlineMail } from "react-icons/md";
 const Footer = () => {
   return (
     <div className="w-full bg-[#e9eff2] pt-10 py-16">
-      <div className="max-w-screen-xl py-8 m-auto px-4 sm:px-0 flex sm:flex-row flex-col gap-8 sm:gap-0 justify-between border-b border-zinc-200">
+      <div className="py-8 max-w-screen-xl m-auto  sm:px-4 md:px-1 px-4  flex sm:flex-row flex-col gap-8 sm:gap-0 justify-between border-b border-zinc-200">
         <img
           className="sm:h-28 h-24 sm:w-28 w-24"
           src="https://www.sync-power.com/jpg/logo-construction2.png"

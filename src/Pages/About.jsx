@@ -9,11 +9,11 @@ const About = () => {
   return (
     <div className="w-screen h-min pt-28">
       <TextHeader text={"About Us"} />
-      <div className="max-w-screen-xl px-4 m-auto h-full flex sm:flex-row flex-col items-start gap-8 sm:gap-2">
-        <div className="w-full sm:w-[20%] h-min z-10 static sm:sticky top-[18%] ">
+      <div className="max-w-screen-xl m-auto  sm:px-4 md:px-1  h-full flex lg:flex-row flex-col items-start gap-8 lg:gap-2">
+        <div className="w-full lg:w-[20%] h-min z-10 static lg:sticky top-[18%] ">
           <Sidebar data={aboutData} />
         </div>
-        <div className="w-full sm:w-[80%]">
+        <div className="w-full lg:w-[80%]">
           <AboutMain />
         </div>
       </div>

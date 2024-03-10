@@ -31,12 +31,13 @@ const HomeServicesData = [
 const HomeServices = () => {
   return (
     <div className="w-full bg-[#eaeff3] ">
-      <div className="max-w-screen-xl m-auto px-4 sm:px-0 py-14">
+      <div className="max-w-screen-xl m-auto  sm:px-4 md:px-1 py-14">
         <h1 className="md:text-4xl text-2xl text-zinc-600 font-thin mb-5 font-['open_sans']">
           Services
         </h1>
-        <div className=" sm:block lg:flex lg:gap-[5%] lg:flex-wrap lg:w-full  ">
-          <HomeServicesComponent data={HomeServicesData} width={"sm:w-[45%]"} />
+        {/* <div className="flex flex-col w-full bg-blue-800 sm:flex-row sm:gap-[5%] sm:flex-wrap"> */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 overflow-x-hidden">
+          <HomeServicesComponent data={HomeServicesData} />
         </div>
       </div>
     </div>

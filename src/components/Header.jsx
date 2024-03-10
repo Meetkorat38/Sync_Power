@@ -7,7 +7,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   return (
     <header className="w-full font-['open_sans'] z-20  bg-zinc-100 fixed">
-      <div className="max-w-screen-xl m-auto py-2 px-5 md:px-0 md:flex justify-between">
+      <div className="max-w-screen-xl m-auto  sm:px-4 md:px-1 py-2 px-5 md:flex justify-between">
         <NavLink to="/">
           <img
             className="w-20 h-20"
@@ -15,6 +15,8 @@ const Header = () => {
             alt=""
           />
         </NavLink>
+
+        {/* Hamburgur Menu */}
         <div
           onClick={() => setOpen(!open)}
           className="md:hidden absolute top-8 right-8 cursor-pointer"
@@ -26,7 +28,7 @@ const Header = () => {
           )}
         </div>
         <div
-          className={`flex md:flex-row pt-5 sm:mt-0 md:items-center md:z-auto  w-full sm:w-max left-0  bg-zinc-100 absolute md:static gap-5 flex-col transition-all duration-500 ease-in ${
+          className={`flex md:flex-row pt-5 sm:mt-0 md:items-center md:z-auto  w-full md:w-max left-0  bg-zinc-100 absolute md:static gap-5 flex-col transition-all duration-500 ease-in ${
             open ? "top-20 " : "top-[-490px]"
           }`}
         >
@@ -68,8 +70,8 @@ const Header = () => {
               {item.text}
             </NavLink>
           ))}
-          <div className="text-center pb-2 sm:mb-0 sm:text-left">
-            <button className=" md:ml-5 md:px-6 md:py-2 px-3 py-1 w-max h-min font-['open_sans'] text-white bg-orange-500 rounded hover:bg-white border border-orange-500 hover:text-orange-500 font-extrabold">
+          <div className="text-center pb-2 md:mb-0 md:text-left">
+            <button className=" md:ml-5 md:px-6 md:py-2 px-3 py-1 w-max h-min font-['open_sans'] text-white bg-orange-500 rounded hover:bg-white border border-orange-500 hover:text-orange-500">
               Login
             </button>
           </div>
