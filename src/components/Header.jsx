@@ -27,8 +27,9 @@ const Header = () => {
             <GiHamburgerMenu size={"1.8rem"} />
           )}
         </div>
+        {/* Navlinks */}
         <div
-          className={`flex md:flex-row pt-5 sm:mt-0 md:items-center md:z-auto  w-full md:w-max left-0  bg-zinc-100 absolute md:static gap-5 flex-col transition-all duration-500 ease-in ${
+          className={`flex md:flex-row pt-5 sm:mt-0 md:items-center z-[-1] md:z-auto  w-full md:w-max left-0  bg-zinc-100 absolute md:static gap-5 flex-col transition-all duration-500 ease-in ${
             open ? "top-20 " : "top-[-490px]"
           }`}
         >
@@ -61,8 +62,9 @@ const Header = () => {
             <NavLink
               key={index}
               to={item.path}
+              onClick={() => setOpen(!open)}
               className={({ isActive }) => {
-                return `md:text-sm text-base text-center md:text-left font-black tracking-tight font-['open_sans'] ${
+                return `md:text-sm text-base text-center md:text-left font-bold tracking-tight font-['open_sans'] ${
                   isActive ? "text-orange-500" : "text-zinc-900"
                 } hover:text-white hover:bg-orange-500 px-2 py-2`;
               }}

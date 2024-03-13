@@ -36,7 +36,7 @@ const HomeServices = () => {
           Services
         </h1>
         {/* <div className="flex flex-col w-full bg-blue-800 sm:flex-row sm:gap-[5%] sm:flex-wrap"> */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 overflow-x-hidden">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
           <HomeServicesComponent data={HomeServicesData} />
         </div>
       </div>
