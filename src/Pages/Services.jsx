@@ -20,7 +20,12 @@ const Services = () => {
       <div className="max-w-screen-xl px-4 m-auto h-full flex lg:flex-row flex-col items-start gap-8  md:gap-16">
         <div className="w-full lg:w-[20%] h-min pt-8 z-10 mb-4">
           <ServicesSidebar data={data} />
-          <ServicesContact />
+          <ServicesContact
+            title={"Contact US"}
+            paragraph={
+              "Contact us or give us a call to discover how we can help."
+            }
+          />
         </div>
         <div className="w-full lg:w-[80%] ">
           <Outlet />

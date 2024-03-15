@@ -9,7 +9,7 @@ const Who = () => {
           Who We Are
         </h1>
         <div className="md:w-[66%] w-full ">
-          <p className="font-['open_sans'] mb-5 text-justify sm:text-[1.2vw] text-[3vw] text-zinc-500 leading-6 sm:leading-7 font-thin tracking-tight">
+          <p className="font-['open_sans'] mb-5 text-justify sm:text-[1.2vw] md:text-[1.5vw] text-[3vw] text-zinc-500 leading-6 sm:leading-7 font-thin tracking-tight">
             Sync-Power Services Inc. is a one-stop shop for product and full
             service option. We are engineering and service company for critical
             and emergency power management. We provides service and solutions

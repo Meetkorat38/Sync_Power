@@ -1,13 +1,13 @@
 import React from "react";
 
-const ServicesContact = () => {
+const ServicesContact = ({ title, paragraph }) => {
   return (
     <div className="w-full h-full mt-10">
       <h1 className='capitalize text-2xl sm:text-2xl font-thin  font-["open_sans"] text-zinc-900'>
-        Contact US
+        {title}
       </h1>
       <p className='font-["open_sans"] text-zinc-600 text-sm my-6 leading-6'>
-        Contact us or give us a call to discover how we can help.
+        {paragraph}
       </p>
       <form>
         {/* Name */}
