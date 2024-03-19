@@ -31,7 +31,7 @@ const data = [
 
 const Contact = () => {
   return (
-    <div className="w-screen h-min pt-28">
+    <div className="w-full h-min pt-28">
       <TextHeader text={"Contact"} />
       <div className="max-w-screen-xl px-5 m-auto  mt-10 mb-20 sm:px-4 md:px-1 w-full">
         <div className="w-full  mb-10 flex flex-col md:flex-row gap-8">

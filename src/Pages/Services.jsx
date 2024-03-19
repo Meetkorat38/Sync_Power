@@ -15,7 +15,7 @@ const data = [
 
 const Services = () => {
   return (
-    <div className="w-screen h-min pt-28 ">
+    <div className="w-full h-min pt-28 ">
       <TextHeader text={"Services"} />
       <div className="max-w-screen-xl px-4 m-auto h-full flex lg:flex-row flex-col items-start gap-8  md:gap-16">
         <div className="w-full lg:w-[20%] h-min pt-8 z-10 mb-4">
