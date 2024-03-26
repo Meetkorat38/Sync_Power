@@ -1,5 +1,5 @@
 import React from "react";
-import LearnMore from "./LearnMore";
+import LearnMore from "../utils/LearnMore";
 
 const Who = () => {
   return (

@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import TextHeader from "../components/TextHeader";
+import React, { useState, useRef, useLayoutEffect } from "react";
+import TextHeader from "../components/utils/TextHeader";
+import gsap from "gsap";
 
 const data = [
   {
@@ -91,6 +92,21 @@ const buttons = [
 const Product = () => {
   const [images, setImages] = useState(data);
   const [activeButton, setActiveButton] = useState("Show All");
+  const imageContainerRef = useRef(null);
+
+  useLayoutEffect(() => {
+    const imagesToAnimate = imageContainerRef.current.children;
+
+    // console.log(imageContainerRef.current.children);
+
+    gsap.from(imagesToAnimate, {
+      yPercent: 100,
+      opacity: 0,
+      delay: 0.3,
+      duration: 0.5,
+      stagger: 0.1,
+    });
+  }, [images]);
 
   const filterImage = (name) => {
     setActiveButton(name);
@@ -127,10 +143,15 @@ const Product = () => {
 
         {/* Products Images */}
 
-        <div className="w-full grid grid-cols-1 gap-8 my-10 md:grid-cols-2 lg:grid-cols-3 overflow-x-hidden">
+        <div
+          ref={imageContainerRef}
+          className="w-full grid grid-cols-1 gap-8 my-10 md:grid-cols-2 lg:grid-cols-3 overflow-x-hidden"
+        >
           {images.map((element) => {
             const { url, name, id } = element;
-            return <img className="w-full h-full" src={url} alt={name} />;
+            return (
+              <img key={id} className="w-full h-full" src={url} alt={name} />
+            );
           })}
         </div>
       </div>

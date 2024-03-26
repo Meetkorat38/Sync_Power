@@ -1,7 +1,7 @@
-import React, { useRef } from "react";
-import TextHeader from "../components/TextHeader";
-import Sidebar from "../components/Sidebar";
-import AboutMain from "../components/AboutMain";
+import React from "react";
+import TextHeader from "../components/utils/TextHeader";
+import Sidebar from "../components/utils/Sidebar";
+import AboutMain from "../components/About/AboutMain";
 
 const aboutData = ["Who We Are", "Partners", "Capabilities Statement"];
 

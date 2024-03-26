@@ -1,8 +1,8 @@
 import React from "react";
-import Slider from "../components/Slider";
-import HomeServices from "../components/HomeServices";
-import Who from "../components/Who";
-import Partners from "../components/Partners";
+import Slider from "../components/utils/Slider";
+import HomeServices from "../components/Home/HomeServices";
+import Who from "../components/Home/Who";
+import Partners from "../components/utils/Partners";
 
 const Home = () => {
   const imagesURL = [

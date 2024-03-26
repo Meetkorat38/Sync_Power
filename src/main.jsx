@@ -9,12 +9,12 @@ import Solution from "./Pages/Solution";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App";
-import Error from "./components/Error";
-import Ats from "./components/Ats";
-import Ups from "./components/Ups";
-import SwitchGear from "./components/SwitchGear";
-import CircuitBreaker from "./components/CircuitBreaker";
-import ServicesMain from "./components/ServicesMain";
+import Error from "./components/utils/Error";
+import Ats from "./components/Services/Ats";
+import Ups from "./components/Services/Ups";
+import SwitchGear from "./components/Services/SwitchGear";
+import CircuitBreaker from "./components/Services/CircuitBreaker";
+import ServicesMain from "./components/Services/ServicesMain";
 
 const router = createBrowserRouter([
   {

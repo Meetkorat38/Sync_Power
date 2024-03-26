@@ -1,8 +1,7 @@
 import React from "react";
-import TextHeader from "../components/TextHeader";
-import ServicesContact from "../components/ServicesContact";
-import ServicesSidebar from "../components/ServicesSidebar";
-import ServicesMain from "../components/ServicesMain";
+import TextHeader from "../components/utils/TextHeader";
+import ServicesContact from "../components/utils/ServicesContact";
+import ServicesSidebar from "../components/Services/ServicesSidebar";
 import { Outlet } from "react-router-dom";
 
 const data = [

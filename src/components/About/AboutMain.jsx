@@ -1,7 +1,7 @@
 import React from "react";
-import Slider from "./Slider";
+import Slider from "../utils/Slider";
 import AboutWho from "./AboutWho";
-import Partners from "./Partners";
+import Partners from "../utils/Partners";
 import Capability from "./Capability";
 
 const data = [

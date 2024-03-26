@@ -1,6 +1,6 @@
 import React from "react";
-import TextHeader from "../components/TextHeader";
-import ServicesContact from "../components/ServicesContact.jsx";
+import TextHeader from "../components/utils/TextHeader.jsx";
+import ServicesContact from "../components/utils/ServicesContact.jsx";
 import { RxDrawingPin } from "react-icons/rx";
 import { GiPhone } from "react-icons/gi";
 import { TbDeviceLandlinePhone } from "react-icons/tb";

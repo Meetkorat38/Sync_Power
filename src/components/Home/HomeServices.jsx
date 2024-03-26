@@ -35,8 +35,7 @@ const HomeServices = () => {
         <h1 className="md:text-4xl text-2xl text-zinc-600 font-thin mb-5 font-['open_sans']">
           Services
         </h1>
-        {/* <div className="flex flex-col w-full bg-blue-800 sm:flex-row sm:gap-[5%] sm:flex-wrap"> */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-16 lg:mb-0">
           <HomeServicesComponent data={HomeServicesData} />
         </div>
       </div>

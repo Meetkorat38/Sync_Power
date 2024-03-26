@@ -1,5 +1,6 @@
-import React from "react";
-import HomeServicesComponent from "./HomeServicesComponent";
+import React, { useLayoutEffect, useRef } from "react";
+import LearnMore from "../utils/LearnMore";
+import gsap from "gsap";
 
 const servicesData = [
   {
@@ -29,9 +30,34 @@ const servicesData = [
 ];
 
 const ServicesMain = () => {
+  const animate = useRef(null);
+  useLayoutEffect(() => {
+    const animateElement = animate.current.children;
+    console.log(animateElement);
+    gsap.from(animateElement, {
+      yPercent: 100,
+      opacity: 0,
+      delay: 0.3,
+      duration: 0.5,
+      stagger: 0.6,
+    });
+  }, []);
   return (
-    <div>
-      <HomeServicesComponent data={servicesData} width={"sm:w-[100%]"} />
+    <div ref={animate}>
+      {servicesData.map((data, index) => (
+        <div key={index} className={`flex gap-8 w-full mt-10 mr-8 mb-3`}>
+          <img className="h-16 w-16" src={data.img} alt="UPS" />
+          <div>
+            <h1 className="font-extralight text-zinc-900 font-['open_sans'] text-2xl">
+              {data.name}
+            </h1>
+            <p className="text-justify w-full font-['open_sans']  text-zinc-700 text-[3vw] sm:text-[2vw] md:text-[1.5vw] lg:text-[1vw] font-light my-4">
+              {data.description}
+            </p>
+            <LearnMore />
+          </div>
+        </div>
+      ))}
     </div>
   );
 };

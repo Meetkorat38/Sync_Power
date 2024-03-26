@@ -1,5 +1,5 @@
 import React from "react";
-import TextHeader from "../components/TextHeader";
+import TextHeader from "../components/utils/TextHeader";
 
 const data = [
   {
